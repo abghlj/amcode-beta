@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="all-style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMCode - الرئيسية</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo-img" src="AM-removebg-preview.png" alt="">
+        </div>
+        <input type="checkbox" id="checkbox" onclick="toggleMenu()">
+        <label for="checkbox" class="toggle">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="our-work.html">أعمالنا</a></li>
+                <li><a href="whos-us.html">من نحن</a></li>
+                <li id="li-login"><a id="login" href="">ابدأ معنا</a></li>
+            </ul>
+        </nav>
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+                var q_x = document.querySelector('.q');
+                q_x.classList.toggle('hide');
+            }
+        </script>
+    </header>
+
+    <div class="q">
+
+        <div class="container">
+            <div class="card" id="main">
+                <h4>AMCode</h4><p>تعلم البرمجة و اطلع على اعمالنا</p>
+            </div>
+            <div id="ow-page" class="card">
+                <h4>أعمالنا</h4><i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="card" id="w">
+                <h4>الدروس</h4><i class="fa-solid fa-lines-leaning"></i>
+            </div>
+            <div class="card">
+                <h4>المزيد</h4><i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+
+        <div class="bg-dot">
+            <div class="coding-i">
+                <div class="text-ci">
+                    <h3>تعلم العمل على الواجهة الأمامية لتطوير الويب</h3>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="icons">
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <ion-icon name="logo-css3"></ion-icon>
+                    <ion-icon name="logo-javascript"></ion-icon>
+                </div>
+            </div>
+            <div class="coding-i-cards">
+                <div class="card-x-i-x">
+                    <div class="cix-cont">
+                        <h3>HTML</h3>
+                        <div class="icon-container">
+                            <ion-icon name="logo-html5"></ion-icon>
+                        </div>
+                    </div>
+                    <p>تعد HTML (HyperText Markup Language) لغة توضيح النصوص المستخدمة لبناء صفحات الويب. تتكون HTML من علامات (tags) تعرف الهيكل والمحتوى لكل عنصر على الصفحة، مثل النصوص، الصور، والروابط. تُعتبر HTML أساسية لتصميم وتنسيق محتويات الصفحة، وتسهل عرضها بشكل منظم على المتصفحات المختلفة.</p>
+                    <a class="start-button" href="courses.html">ابدأ تعلمها</a>
+                </div>
+                <div class="card-x-i-x">
+                    <div class="cix-cont">
+                        <h3>CSS</h3>
+                        <div class="icon-container">
+                            <ion-icon name="logo-css3"></ion-icon>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 50px;">CSS (Cascading Style Sheets) هي لغة تنسيق النمط التي تستخدم لتعديل مظهر عناصر صفحات الويب التي تم إنشاؤها بواسطة HTML. تُمكن CSS من تعيين الألوان، الخطوط، الهوامش، والتنسيقات الأخرى لتحسين تجربة المستخدم وجعل الصفحة أكثر جاذبية وسهولة في القراءة.</p>
+                    <a class="start-button" href="courses.html">ابدأ تعلمها</a>
+                </div>
+                <div class="card-x-i-x">
+                    <div class="cix-cont">
+                        <h3>JavaScript</h3>
+                        <div class="icon-container">
+                            <ion-icon name="logo-javascript"></ion-icon>
+                        </div>
+                    </div>
+                    <p>
+                        JavaScript هي لغة برمجة تُستخدم لإضافة تفاعل وديناميكية إلى صفحات الويب التي تم إنشاؤها باستخدام HTML وتنسيقها بواسطة CSS. تُساعد JavaScript في إضافة الوظائف التفاعلية مثل التحقق من النماذج، والتحكم في العناصر، وتغيير المحتوى بناءً على تفاعل المستخدم، مما يُحسّن تجربة المستخدم ويجعل الصفحات أكثر ديناميكية وتفاعلية.</p>
+                    <a class="start-button" href="courses.html">ابدأ تعلمها</a>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+</body>
+<script>
+    document.getElementById("ow-page").addEventListener("click", function() {
+        window.location.href = 'our-work.html';
+    });
+</script>
+</html>
+

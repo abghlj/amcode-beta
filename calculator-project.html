@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="all-style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project - AMCode</title>
+</head>
+<body>
+    <div class="error-width">
+        <h3>حجم الشاشة صغير جدا</h3>
+        <p>المشروع لا يمكن عرضه في شاشة عرضها أقل من 350 بكسل</p>
+    </div>
+    <header>
+        <div class="icsx">
+            <h3>حاسبة - Project</h3> <div class="parent"><div class="text-icsx"><p>العودة الى صفحة المشاريع</p></div> <a href="our-work.html"><ion-icon name="arrow-forward-circle-outline"></ion-icon></a></div>
+        </div>
+        <div>
+            <h3>AMCode</h3>
+        </div>
+    </header>
+
+    <div id="clcmain" class="container flex flex-col items-center mx-auto m-w-20">
+        <div class="row">
+          <input class="input" type="text"/>
+        </div>
+        <div class="row">
+          <button class="button">C</button>
+          <button class="button">%</button>
+          <button class="button">M+</button>
+          <button class="button">M-</button>
+        </div>
+        <div class="row">
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button">*</button>
+        </div>
+        <div class="row">
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button">/</button>
+        </div>
+        <div class="row">
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button">+</button>
+        </div>
+        <div class="row">
+          <button class="button">0</button>
+          <button class="button">.</button>
+          <button class="button">=</button>
+          <button class="button">-</button>
+        </div>
+      </div>
+
+</body>
+</html>
+<style>
+    /* calculator css */
+    html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.button{
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+#clcmain{
+    margin: 100px;
+}
+.row{
+  margin: 8px 0;
+}
+.row input{
+  width: 291px;
+  font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+    .text-center{
+  text-align: center;
+}
+
+.bg-red{
+  background: red;
+}
+
+.mx-auto{
+  margin: auto;
+}
+
+.flex{
+  display:flex;
+} 
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+    header {
+    background-color: #5271FF;
+    padding: 8px 50px;
+    display: flex;
+    direction: rtl;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.icsx{
+    align-items: center;
+    display: flex;
+    direction: ltr;
+}
+.text-icsx{
+    display: none;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px;
+    margin-left: 10px;
+    transition: 0.2s;
+    opacity: 0.5;
+}
+.icsx a{
+    color: white;
+    align-items: center;
+}
+.icsx a ion-icon{
+    vertical-align: middle;
+    font-size: 1.6rem;
+    margin-left:10px;
+    opacity: 0.7;
+}
+.parent{
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+.parent:hover .text-icsx {
+    display: block;
+}
+header h3 {
+    color: white;
+    font-weight: 400;
+    align-items: center;
+}
+.icsx a ion-icon:hover{
+    opacity: 1;
+}
+body{
+    background-color: #647ff9;
+}
+@media (max-width:500px){
+    .button{
+        width: 43px;
+        padding: 10px;
+    }
+    .row input{
+        width: 205px;
+    }
+    #clcmain{
+        margin: 50px;
+    }
+    header h3{
+        font-size: 0.9rem;
+    }
+    .parent:hover .text-icsx{
+        display: none;
+    }
+}
+.error-width{
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-top:45px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #5271FF;
+}
+@media (max-width:320px){
+    .error-width{
+        display: block;
+        position: fixed;
+    }
+}
+</style>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let string = "";
+let buttons = document.querySelectorAll('.button');
+Array.from(buttons).forEach((button)=>{
+  button.addEventListener('click', (e)=>{
+    if(e.target.innerHTML == '='){
+      string = eval(string);
+      document.querySelector('input').value = string;
+    }
+    else if(e.target.innerHTML == 'C'){
+      string = ""
+      document.querySelector('input').value = string;
+    }
+    else{ 
+    console.log(e.target)
+    string = string + e.target.innerHTML;
+    document.querySelector('input').value = string;
+      }
+  })
+})
+</script>
